@@ -16,9 +16,11 @@ const imprimirResultado = function (nota) {
     }
 }
 
-console,log('Fim!')
+console.log('Fim!')
 
 imprimirResultado(10)
 imprimirResultado(8)
 imprimirResultado(5)
 imprimirResultado(3)
+imprimirResultado(-1)
+imprimirResultado(11)
