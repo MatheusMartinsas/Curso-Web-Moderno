@@ -1,19 +1,23 @@
 function tipoTriangulo(a, b, c) {
     if(a != b) {
-        if(b != c) {
-            console.log('Escaleno')
-        } else (
-            console.log('Isósceles')
-        )
-    } else if (b = c) {
-        console.log('Equilátero')
+        if(a != c) {
+            if(c != b) {
+                console.log("Escaleno")
+            } else {
+                console.log("Isósceles")
+            }
+        } else {
+            console.log("Isóceles")
+        }
+    } else if(a != c) {
+        console.log("Isósceles")
     } else {
-        console.log('Escaleno')
+        console.log("Equilátero")
     }
 }
 
-tipoTriangulo(1, 2, 3)
-tipoTriangulo(1, 2, 1)
-tipoTriangulo(1, 1, 2)
-tipoTriangulo(2, 1, 1)
-tipoTriangulo(2, 2, 2)
+tipoTriangulo(1, 2, 3) //Escaleno
+tipoTriangulo(1, 2, 1) //Isóceles
+tipoTriangulo(1, 1, 2) //Isóceles
+tipoTriangulo(2, 1, 1) //Isóceles
+tipoTriangulo(2, 2, 2) //Equilátero
